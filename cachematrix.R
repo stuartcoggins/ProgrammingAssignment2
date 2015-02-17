@@ -6,7 +6,10 @@
 ## The four methods are set, get, setinverse and getinverse.
 
 makeCacheMatrix <- function(x = matrix()) {
+      
+      # Erase any cached value that might exist in 'inverse'
       inverse <- NULL
+      
       set <- function(y) {
             x <<- y
             inverse <<- NULL
